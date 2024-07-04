@@ -7,7 +7,7 @@ import org.junit.Test;
 public class StringCalculatorTest {
 
     
-    @Test
+    	@Test
 	public void ExpectZeroForEmptyInput()
 	{
 		int expectedResult = 0;
@@ -18,16 +18,16 @@ public class StringCalculatorTest {
 		assertEquals(expectedResult,result);
 	}
 
-//	@Test
-//	public void ExpectZeroForSingleZero()
-//	{
-//		int expectedResult = 0;
-//		String input = "0";
-//		StringCalculator objUnderTest = new StringCalculator();
-//		int result = objUnderTest.add(input);
-//		assertEquals(expectedResult,result);
-//
-//	}
+	@Test
+	public void ExpectZeroForSingleZero()
+	{
+		int expectedResult = 0;
+		String input = "0";
+		StringCalculator objUnderTest = new StringCalculator();
+		int result = objUnderTest.add(input);
+		assertEquals(expectedResult,result);
+
+	}
 //
 //	@Test
 //	public void ExpectSumForTwoNumbers()
